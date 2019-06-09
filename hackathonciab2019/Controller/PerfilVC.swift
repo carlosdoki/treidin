@@ -18,7 +18,11 @@ class PerfilVC: UIViewController {
     
 
     @IBAction func proximoPressed(_ sender: Any) {
-        performSegue(withIdentifier: "resumo", sender: nil)
+        
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "resumo") as! ViewController
+//        controller.metaTxt.text = nil
+        controller.valores = [500, 400, 800, 750, 650, 500, 640, 510, 450, 600]
+        self.present(controller, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

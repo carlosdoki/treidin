@@ -18,10 +18,13 @@ class NomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
+
         sliderUI.value = 24
         tempoTxt.text = "24"
-        // Do any additional setup after loading the view.
     }
+
     
     @IBAction func proximoPressed(_ sender: Any) {
         nome = nomeTxt.text!
@@ -38,3 +41,15 @@ class NomeVC: UIViewController {
 //        sliderUI.value = Int(tempoTxt.text)
     }
 }
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+

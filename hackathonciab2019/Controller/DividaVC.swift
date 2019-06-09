@@ -10,6 +10,8 @@ import UIKit
 
 class DividaVC: UIViewController {
 
+    @IBOutlet weak var custoTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,7 @@ class DividaVC: UIViewController {
     
 
     @IBAction func proximoPressed(_ sender: Any) {
+        custo = Double(custoTxt.text!)!
         performSegue(withIdentifier: "renda2", sender: nil)
     }
     /*

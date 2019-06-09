@@ -16,14 +16,15 @@ class RendaVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+
     }
     
+
     @IBAction func proximoPressed(_ sender: Any) {
         renda = Double(rendaTxt.text!)!
         despesas = Double(despesaTxt.text!)!
         performSegue(withIdentifier: "despesas", sender: nil)
     }
-
 
 }

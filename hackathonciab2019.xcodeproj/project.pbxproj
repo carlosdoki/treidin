@@ -22,6 +22,7 @@
 		BCAA250A22ACE27D00762C90 /* EndividamentoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA250922ACE27D00762C90 /* EndividamentoVC.swift */; };
 		BCAA250C22ACE28C00762C90 /* MatrizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA250B22ACE28C00762C90 /* MatrizVC.swift */; };
 		BCAA250E22ACE2B500762C90 /* AgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA250D22ACE2B500762C90 /* AgendaVC.swift */; };
+		BCD5CAD922AD111000C49112 /* despesasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5CAD822AD111000C49112 /* despesasTVC.swift */; };
 		BCEF6C2F22AC47AE009650F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCEF6C2E22AC47AE009650F5 /* GoogleService-Info.plist */; };
 		BCEF6C3122AC4BF5009650F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF6C3022AC4BF5009650F5 /* LoginViewController.swift */; };
 		BCEF6C3322AC52AB009650F5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF6C3222AC52AB009650F5 /* ChatViewController.swift */; };
@@ -73,6 +74,7 @@
 		BCAA250922ACE27D00762C90 /* EndividamentoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndividamentoVC.swift; sourceTree = "<group>"; };
 		BCAA250B22ACE28C00762C90 /* MatrizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrizVC.swift; sourceTree = "<group>"; };
 		BCAA250D22ACE2B500762C90 /* AgendaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaVC.swift; sourceTree = "<group>"; };
+		BCD5CAD822AD111000C49112 /* despesasTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = despesasTVC.swift; sourceTree = "<group>"; };
 		BCEF6C2E22AC47AE009650F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCEF6C3022AC4BF5009650F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BCEF6C3222AC52AB009650F5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				BCAA250922ACE27D00762C90 /* EndividamentoVC.swift */,
 				BCAA250B22ACE28C00762C90 /* MatrizVC.swift */,
 				BCAA250D22ACE2B500762C90 /* AgendaVC.swift */,
+				BCD5CAD822AD111000C49112 /* despesasTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				BCEF6C3322AC52AB009650F5 /* ChatViewController.swift in Sources */,
 				BCAA250822ACE26500762C90 /* DividaVC.swift in Sources */,
 				BCAA24FB22ACD8B900762C90 /* Checkbox.swift in Sources */,
+				BCD5CAD922AD111000C49112 /* despesasTVC.swift in Sources */,
 				BCF2646222AC452B005C1208 /* AppDelegate.swift in Sources */,
 				BCAA24F922ACA67800762C90 /* Constants.swift in Sources */,
 				BCAA250422ACE24800762C90 /* PerfilVC.swift in Sources */,

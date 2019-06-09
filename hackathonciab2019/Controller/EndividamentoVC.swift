@@ -10,24 +10,33 @@ import UIKit
 
 class EndividamentoVC: UIViewController {
 
+    @IBOutlet weak var porcentagemTxt: UILabel!
+    @IBOutlet weak var parcelasTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        porcentagemTxt.text = "300 %"
+        parcelasTxt.text = "36"
+        
+        self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func proximoPressed(_ sender: Any) {
-        performSegue(withIdentifier: "principal2", sender: nil)
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "resumo") as! ViewController
+//        controller.valores = [500, 400, 800, 750, 650, 500, 640, 510, 450, 600]
+        self.present(controller, animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+//extension UIViewController {
+//    func hideKeyboardWhenTappedAround() {
+//        let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+//        tap.cancelsTouchesInView = false
+//        view.addGestureRecognizer(tap)
+//    }
+//    @objc func dismissKeyboard() {
+//        view.endEditing(true)
+//    }
+//}

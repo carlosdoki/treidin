@@ -17,3 +17,5 @@ var custo = 0.0
 var tempo = 0
 var renda = 0.0
 var despesas = 0.0
+
+var total = 0.0
