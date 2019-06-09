@@ -1,0 +1,6 @@
+framework module Pods_hackathonciab2019Tests {
+  umbrella header "Pods-hackathonciab2019Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

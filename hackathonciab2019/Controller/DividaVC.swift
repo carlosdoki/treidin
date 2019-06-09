@@ -17,6 +17,9 @@ class DividaVC: UIViewController {
     }
     
 
+    @IBAction func proximoPressed(_ sender: Any) {
+        performSegue(withIdentifier: "renda2", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

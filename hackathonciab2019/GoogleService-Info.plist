@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>96919834407-m6jn6hclc9nfosjg79mkknfs69gbp5lv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.96919834407-m6jn6hclc9nfosjg79mkknfs69gbp5lv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA_D18NwT3TYI5dZpDoC8W0pHwDgJDnJ04</string>
+	<key>GCM_SENDER_ID</key>
+	<string>96919834407</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.carlosdoki.hackathonciab2019</string>
+	<key>PROJECT_ID</key>
+	<string>hackathonciab2019</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hackathonciab2019.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:96919834407:ios:b5d86b339cf46576</string>
+	<key>DATABASE_URL</key>
+	<string>https://hackathonciab2019.firebaseio.com</string>
+</dict>
+</plist>

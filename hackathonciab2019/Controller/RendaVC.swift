@@ -10,21 +10,20 @@ import UIKit
 
 class RendaVC: UIViewController {
 
+    @IBOutlet weak var rendaTxt: UITextField!
+    @IBOutlet weak var despesaTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func proximoPressed(_ sender: Any) {
+        renda = Double(rendaTxt.text!)!
+        despesas = Double(despesaTxt.text!)!
+        performSegue(withIdentifier: "despesas", sender: nil)
     }
-    */
+
 
 }

@@ -10,21 +10,31 @@ import UIKit
 
 class NomeVC: UIViewController {
 
+    @IBOutlet weak var nomeTxt: UITextField!
+    @IBOutlet weak var custoTxt: UITextField!
+    @IBOutlet weak var tempoTxt: UITextField!
+    @IBOutlet weak var sliderUI: UISlider!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        sliderUI.value = 24
+        tempoTxt.text = "24"
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func proximoPressed(_ sender: Any) {
+        nome = nomeTxt.text!
+        custo = Double(custoTxt.text!)!
+        tempo = Int(sliderUI.value)
+        performSegue(withIdentifier: "renda", sender: nil)
     }
-    */
-
+    
+    @IBAction func sliderChange(_ sender: Any) {
+        tempoTxt.text = "\(Int(sliderUI.value))"
+    }
+    
+    @IBAction func tempoChnaged(_ sender: Any) {
+//        sliderUI.value = Int(tempoTxt.text)
+    }
 }

@@ -17,6 +17,9 @@ class PerfilVC: UIViewController {
     }
     
 
+    @IBAction func proximoPressed(_ sender: Any) {
+        performSegue(withIdentifier: "resumo", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -16,7 +16,10 @@ class EndividamentoVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func proximoPressed(_ sender: Any) {
+        performSegue(withIdentifier: "principal2", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

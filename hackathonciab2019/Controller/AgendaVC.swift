@@ -17,6 +17,9 @@ class AgendaVC: UIViewController {
     }
     
 
+    @IBAction func proximoPressed(_ sender: Any) {
+        performSegue(withIdentifier: "principal2", sender: nil)
+    }
     /*
     // MARK: - Navigation
 

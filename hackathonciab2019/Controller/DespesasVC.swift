@@ -10,6 +10,8 @@ import UIKit
 
 class DespesasVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +19,13 @@ class DespesasVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func proximoPressed(_ sender: Any) {
+        if (divida == 0 ) {
+            performSegue(withIdentifier: "perfil", sender: nil)
+        } else {
+            performSegue(withIdentifier: "endividamento", sender: nil)
+        }
+        
     }
-    */
 
 }
